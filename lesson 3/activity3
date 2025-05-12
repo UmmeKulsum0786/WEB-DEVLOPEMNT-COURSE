@@ -1,0 +1,58 @@
+
+#Joining the strings using some seperator
+b=['Umme','kulsum','is','georgios','coding','instructor']
+print(b)
+print(" ".join(b))
+print('@'.join(b))
+print('$'.join(b))
+
+
+#JOINING TWO STRINGS in single string (ALSO KNOWN AS STRING CANCATENATION)
+X="UMME"
+Y="KULSUM"
+print(X+Y)
+
+
+#input a string and split it:
+a="Ravi loves coding"
+print(a.split(' '))
+
+
+#to find a word in string(GIVES INDEX OF A LETTER IN STRING *INDEX STARTES FROM 0 AND LENGTH STARTS FROM 1)
+print(a.find("loves"))
+
+#to replace a word in a string
+print(a.replace("loves","is obsssesed"))
+
+#Changing the case(small to capital and capital to small) of a string
+message="python is fun"
+print(message.upper())
+message2="CHANGING THE CASE"
+print(message2.lower())
+
+#Finding out the length of string (*remember length always starts from 1 and index starts from 0 )
+Z="FIND MY LENGTH"
+print(len(Z))
+
+
+#slicing a string(*slicing is done on index of string means 
+# it starts at 0 and syntax is startpoint,endpoint,step up value
+# also slicing always includes start point value and the strp up value as output
+# when we slice data using negative number the indexing starts from end of string as -1,-2 and so on
+# since 0 is whole number there is nothing like negative 0)
+str5="STRING"
+print(str5[::1])
+print(str5[::-1])#same logic for reversing the string
+print(str5[::2])#SRN
+print(str5[::3])
+
+
+
+# Reverse String 
+#using step value as -1 to iterate in reverse
+#input a word
+text = str(input("Enter a string: "))
+revText = text[::-1] 
+text = revText
+print("Reverse of Given String is:")
+print(text)
